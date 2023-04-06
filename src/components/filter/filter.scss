@@ -1,0 +1,14 @@
+.filter-wrapper {
+    margin-block: 2rem;
+
+}
+
+
+@media (min-width: 756px) {
+    .filter-wrapper {
+        .container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.header {
+    padding-block: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    &__mode {
+        display: flex;
+        gap: 0.5rem;
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+
+.header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        font-size: 1rem;
+    }
+}

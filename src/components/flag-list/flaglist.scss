@@ -1,0 +1,50 @@
+
+.country-wrapper {
+    display: grid;
+    grid-template-columns:  1fr;
+    gap: 4.5rem;
+}
+
+.flagbox {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    &__img {
+        display: flex;
+        // align-items: center;
+        // justify-content: center;
+        //   height: 14rem;
+        
+        img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 100%;
+        }
+    }
+
+    &__content {
+        padding-block: 2rem;
+        padding-inline: 1.2rem;
+
+        span {
+            font-weight: bolder;
+        }
+    }
+}
+
+@media (min-width: 756px) {
+    .country-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    .flagbox {
+        max-width: 20rem;
+
+        &__img {
+            height: 10rem;
+        }
+
+    }
+}
