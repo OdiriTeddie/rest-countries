@@ -1,12 +1,18 @@
 import React from "react";
 import Country from "../country/Country";
+import { Link } from "react-router-dom";
 
 const Countries = ({ countries }) => {
   return (
     <div>
-      {countries.map((country) => {
-        return <Country key={country.name} {...country} />;
-      })}
+      {countries &&
+        countries.map((country) => {
+          return (
+            <Link to={`/country/${country.name}`} key={country.name}>
+              <Country country={country} />
+            </Link>
+          );
+        })}
     </div>
   );
 };
