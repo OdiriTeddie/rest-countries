@@ -1,0 +1,12 @@
+.country {
+  background-color: var(--light-element-bg-color);
+  color: var(--light-color);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+
+  &.dark-theme {
+    background-color: var(--dark-element-bg-color);
+    color: var(--dark-color);
+    box-shadow: none;
+  }
+}

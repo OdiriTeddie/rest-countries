@@ -3,6 +3,14 @@
   --fw-300: 300;
   --fw-600: 600;
   --fw-800: 800;
+
+  --dark-bg-color: hsl(207, 26%, 17%);
+  --light-bg-color: hsl(0, 0%, 98%);
+  --dark-element-bg-color: hsl(209, 23%, 22%);
+  --light-element-bg-color: hsl(0, 0%, 100%);
+  --light-color: hsl(200, 15%, 8%);
+  --dark-color: hsl(0, 0%, 100%);
+  --light-input: hsl(0, 0%, 52%);
 }
 
 html {
@@ -22,9 +30,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osc-font-smoothing: grayscale;
   font-family: var(--ff-300);
-  background-color: #fafafa;
+  background-color: var(--light-bg-color);
+  color: var(--light-color);
   font-size: 0.875rem;
   line-height: 1.5;
+
+  &.dark-theme {
+    color: var(--dark-color);
+    background: var(--dark-bg-color);
+  }
 }
 
 h1,
@@ -38,6 +52,7 @@ button,
 textarea,
 select {
   font: inherit;
+  color: var(--light-input);
 }
 
 img,

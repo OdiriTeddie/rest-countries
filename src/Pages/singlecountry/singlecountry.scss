@@ -1,0 +1,18 @@
+.back {
+  padding-block: 3rem;
+}
+
+.single-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+
+  & > * {
+    width: 50%;
+  }
+}
+
+.country-features {
+  display: flex;
+  justify-content: space-between;
+}
