@@ -4,6 +4,11 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 5px;
 
+  &__dets {
+    padding-block: 1.8rem;
+    padding-inline: 1.5rem;
+  }
+
   &.dark-theme {
     background-color: var(--dark-element-bg-color);
     color: var(--dark-color);

@@ -1,9 +1,29 @@
 .back {
-  padding-block: 3rem;
+  padding-block: 3.5rem;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 2rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-decoration: none;
+  background-color: var(--light-element-bg-color);
+  color: var(--light-color);
+
+  &.dark-theme {
+    background-color: var(--dark-element-bg-color);
+    color: var(--dark-color);
+    box-shadow: none;
+  }
 }
 
 .single-wrapper {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 5rem;
 
@@ -15,4 +35,34 @@
 .country-features {
   display: flex;
   justify-content: space-between;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .languages {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+}
+
+.borders {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  .border-countries {
+    padding: 0.5rem 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }

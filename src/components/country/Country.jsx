@@ -21,7 +21,7 @@ const Country = ({
       <Link to={`/${name}`}>
         <img src={png} alt="" />
       </Link>
-      <div>
+      <div className="country__dets">
         <h3> {name} </h3>
         <div>
           <p>Population: {population}</p>

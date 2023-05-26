@@ -1,6 +1,7 @@
 .filter-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   padding-block: 3rem;
 }
 
@@ -10,6 +11,9 @@
   border: none;
   padding: 1rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
 
   &::placeholder {
     color: var(--light-input);
@@ -32,6 +36,8 @@
   border: none;
   padding: 1rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 4px;
+  outline: none;
   &.dark-theme {
     background-color: var(--dark-element-bg-color);
     color: var(--dark-color);
@@ -43,5 +49,9 @@
   .filter-wrapper {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .search-input {
+    width: 30rem;
   }
 }
